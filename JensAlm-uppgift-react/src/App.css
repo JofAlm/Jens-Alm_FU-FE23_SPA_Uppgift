@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  --link-color: rgb(88, 88, 88);
+}
+
+body.dark-theme {
+  --background-color: #333333;
+  --text-color: #ffffff;
+  --link-color: lightblue;
+}
+
+.navigation {
+  display: flex;
+  justify-content: start;
+}
+
+a {
+  margin-right: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--link-color);
+}
+
+header {
+  display: flex;
+  justify-content: start;
+  padding-bottom: 10px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center; /* Anpassa textens placering */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em; /* Anpassa rubrikens storlek */
+}
